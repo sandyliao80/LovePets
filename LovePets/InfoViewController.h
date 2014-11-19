@@ -10,4 +10,8 @@
 
 @interface InfoViewController : BaseViewController
 
+{
+    IBOutlet UIView * headView;
+}
+
 @end

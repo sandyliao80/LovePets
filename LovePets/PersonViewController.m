@@ -1,30 +1,22 @@
 //
-//  InfoViewController.m
+//  PersonViewController.m
 //  LovePets
 //
-//  Created by apple on 14/11/19.
+//  Created by 于博洋 on 14/11/19.
 //  Copyright (c) 2014年 yuby. All rights reserved.
 //
 
-#import "InfoViewController.h"
-#import "InfoTableView.h"
+#import "PersonViewController.h"
 
-@interface InfoViewController ()
+@interface PersonViewController ()
 
 @end
 
-@implementation InfoViewController
+@implementation PersonViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    self.labTitle.text = @"CoCo 的  猫";
-    InfoTableView * infoTableView = [[InfoTableView alloc]initWithFrame:CGRectMake(0, 0, appBounds.size.width, appBounds.size.height-self.navHeight) style:UITableViewStylePlain];
-//    infoTableView.meunsDelegate = self;
-    infoTableView.backgroundColor = RGBONLYCOLOR(225);
-    infoTableView.tableHeaderView = headView;
-    [self.view addSubview:infoTableView];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -36,11 +36,11 @@
     
     self.optionIndices = [NSMutableIndexSet indexSetWithIndex:1];
     
-    MenusTableV * menusTavleView = [[MenusTableV alloc]initWithFrame:CGRectMake(0, 0, appBounds.size.width, appBounds.size.height)];
+    MenusTableV * menusTavleView = [[MenusTableV alloc]initWithFrame:CGRectMake(0, 0, appBounds.size.width, appBounds.size.height-self.navHeight) style:UITableViewStylePlain];
     menusTavleView.meunsDelegate = self;
     menusTavleView.backgroundColor = RGBONLYCOLOR(225);
     
-    ChatListTableView * chatTableView = [[ChatListTableView alloc]initWithFrame:CGRectMake(appBounds.size.width, 0, appBounds.size.width, appBounds.size.height)];
+    ChatListTableView * chatTableView = [[ChatListTableView alloc]initWithFrame:CGRectMake(appBounds.size.width, 0, appBounds.size.width, appBounds.size.height-self.navHeight)];
     chatTableView.backgroundColor = RGBONLYCOLOR(225);
     
     self.aScrollVIew.frame = CGRectMake(0, 0, appBounds.size.width, appBounds.size.height);

@@ -116,14 +116,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (self.meunsDelegate!=nil&&[self.meunsDelegate respondsToSelector:@selector(didtableView:row:arrOne:)]) {
-        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        [tableView deselectRowAtIndexPath:indexPath animated:NO];
         [self.meunsDelegate didtableView:self row:indexPath.row arrOne:nil];
     }
-    [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 300;
+    return 350;
 }
 
 #pragma mark - UITableView DataSource

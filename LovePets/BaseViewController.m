@@ -20,6 +20,7 @@
     // Do any additional setup after loading the view from its nib.
     
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"base_navBG.png"] forBarMetrics:UIBarMetricsDefault];
+    self.navHeight = 44;
     
     self.leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     self.leftBtn.frame =CGRectMake(0, 0, 51, 22);

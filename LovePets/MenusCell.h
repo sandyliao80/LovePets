@@ -11,9 +11,12 @@
 @interface MenusCell : UITableViewCell
 
 {
-    IBOutlet UIView * userHeadView;
+    IBOutlet UIView * bgView;
+    IBOutlet UIImageView * headImage;
+    
+    
 }
-@property (nonatomic, weak) IBOutlet UIImageView *backgroundImageView;
+
 
 
 @end

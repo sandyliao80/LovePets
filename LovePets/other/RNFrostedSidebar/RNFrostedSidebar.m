@@ -261,7 +261,7 @@ static RNFrostedSidebar *rn_frostedMenu;
         _contentView.showsVerticalScrollIndicator = NO;
         
         _width = 150;
-        _animationDuration = 0.25f;
+        _animationDuration = 0.15f;
         _itemSize = CGSizeMake(_width/2, _width/2);
         _itemViews = [NSMutableArray array];
         _tintColor = [UIColor colorWithWhite:0.2 alpha:0.73];
