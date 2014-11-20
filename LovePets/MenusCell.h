@@ -14,9 +14,10 @@
     IBOutlet UIView * bgView;
     IBOutlet UIImageView * headImage;
     
+    IBOutlet UIImageView * imgInfo;
     
 }
 
-
+- (void)updataCellWithOrderInfo:(NSInteger)index;
 
 @end

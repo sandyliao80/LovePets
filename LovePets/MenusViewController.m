@@ -61,8 +61,8 @@
     NSArray *images = @[
                         [UIImage imageNamed:@"meuns_profile"],
                         [UIImage imageNamed:@"meuns_nil.png"],
-                        [UIImage imageNamed:@"meuns_profile"],
-                        [UIImage imageNamed:@"meuns_star"],
+                        [UIImage imageNamed:@"menus_oneTitle.png"],
+                        [UIImage imageNamed:@"menus_twoTitle.png"],
                         [UIImage imageNamed:@"meuns_nil.png"],
                         [UIImage imageNamed:@"meuns_globe"],
                         [UIImage imageNamed:@"meuns_profile"],

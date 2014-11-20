@@ -24,10 +24,10 @@
     
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
+- (void)updataCellWithOrderInfo:(NSInteger)index
+{
     // Configure the view for the selected state
+    imgInfo.image = [UIImage imageNamed:[NSString stringWithFormat:@"cat%ld",(long)index%9]];
 }
 
 @end

@@ -162,7 +162,7 @@
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         [self setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     }
-//    [cell updataCellWithOrderInfo:_arrlist[indexPath.row]];
+    [cell updataCellWithOrderInfo:indexPath.row];
     
     return cell;
 }

@@ -188,9 +188,17 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    CGFloat inset = self.bounds.size.height/2;
-    self.imageView.frame = CGRectMake(0, 0, inset, inset);
-    self.imageView.center = CGPointMake(inset, inset);
+    CGFloat inset = self.bounds.size.height;
+    self.imageView.frame = CGRectMake(0, 0, 150, 75);
+    
+    if (self.itemIndex == 0) {
+        self.imageView.center = CGPointMake(inset/2, inset/2);
+    }
+    else
+    {
+        self.imageView.center = CGPointMake(75, inset/2);
+    }
+    
 }
 
 - (void)setOriginalBackgroundColor:(UIColor *)originalBackgroundColor {
@@ -632,6 +640,8 @@ static RNFrostedSidebar *rn_frostedMenu;
         view.frame = frame;
         
     }];
+    
+    NSLog(@"%f ~~  %f",self.itemSize.width,self.itemSize.height);
     
     NSInteger items = [self.itemViews count];
     self.contentView.contentSize = CGSizeMake(0, items * (self.itemSize.height + leftPadding) + leftPadding);

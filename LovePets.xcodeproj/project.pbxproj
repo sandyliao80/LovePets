@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1866DFDA1A1D886300F71D9C /* menus_oneTap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1866DFD61A1D886300F71D9C /* menus_oneTap@2x.png */; };
+		1866DFDB1A1D886300F71D9C /* menus_three@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1866DFD71A1D886300F71D9C /* menus_three@2x.png */; };
+		1866DFDC1A1D886300F71D9C /* menus_threeTap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1866DFD81A1D886300F71D9C /* menus_threeTap@2x.png */; };
+		1866DFDD1A1D886300F71D9C /* menus_one@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1866DFD91A1D886300F71D9C /* menus_one@2x.png */; };
+		1866DFDF1A1D966700F71D9C /* menus_oneTitle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1866DFDE1A1D966700F71D9C /* menus_oneTitle@2x.png */; };
+		1866DFE31A1DE1E500F71D9C /* menus_twoTitle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1866DFE21A1DE1E500F71D9C /* menus_twoTitle@2x.png */; };
 		1875AD6E1A1B36AA0091AB11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1875AD6D1A1B36AA0091AB11 /* main.m */; };
 		1875AD711A1B36AA0091AB11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1875AD701A1B36AA0091AB11 /* AppDelegate.m */; };
 		1875AD741A1B36AA0091AB11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1875AD731A1B36AA0091AB11 /* ViewController.m */; };
@@ -60,7 +66,6 @@
 		189CA0CB1A1C9BF1009A3E4C /* chat_line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189CA0CA1A1C9BF1009A3E4C /* chat_line@2x.png */; };
 		189CA0CF1A1CA360009A3E4C /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189CA0CD1A1CA360009A3E4C /* InfoViewController.m */; };
 		189CA0D01A1CA360009A3E4C /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189CA0CE1A1CA360009A3E4C /* InfoViewController.xib */; };
-		9A4372191A1CC361004F3F1A /* menus_like@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4372181A1CC361004F3F1A /* menus_like@2x.png */; };
 		9A4372211A1CDF52004F3F1A /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A43721F1A1CDF52004F3F1A /* PersonViewController.m */; };
 		9A4372221A1CDF52004F3F1A /* PersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4372201A1CDF52004F3F1A /* PersonViewController.xib */; };
 		9A4372281A1CE1E5004F3F1A /* InfoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4372271A1CE1E5004F3F1A /* InfoTableView.m */; };
@@ -79,6 +84,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1866DFD61A1D886300F71D9C /* menus_oneTap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menus_oneTap@2x.png"; sourceTree = "<group>"; };
+		1866DFD71A1D886300F71D9C /* menus_three@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menus_three@2x.png"; sourceTree = "<group>"; };
+		1866DFD81A1D886300F71D9C /* menus_threeTap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menus_threeTap@2x.png"; sourceTree = "<group>"; };
+		1866DFD91A1D886300F71D9C /* menus_one@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menus_one@2x.png"; sourceTree = "<group>"; };
+		1866DFDE1A1D966700F71D9C /* menus_oneTitle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menus_oneTitle@2x.png"; sourceTree = "<group>"; };
+		1866DFE21A1DE1E500F71D9C /* menus_twoTitle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menus_twoTitle@2x.png"; sourceTree = "<group>"; };
 		1875AD681A1B36AA0091AB11 /* LovePets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LovePets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1875AD6C1A1B36AA0091AB11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1875AD6D1A1B36AA0091AB11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -154,7 +165,6 @@
 		189CA0CC1A1CA360009A3E4C /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		189CA0CD1A1CA360009A3E4C /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		189CA0CE1A1CA360009A3E4C /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
-		9A4372181A1CC361004F3F1A /* menus_like@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menus_like@2x.png"; sourceTree = "<group>"; };
 		9A43721E1A1CDF52004F3F1A /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
 		9A43721F1A1CDF52004F3F1A /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
 		9A4372201A1CDF52004F3F1A /* PersonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonViewController.xib; sourceTree = "<group>"; };
@@ -371,7 +381,12 @@
 		189CA0691A1C4DC6009A3E4C /* menusImage */ = {
 			isa = PBXGroup;
 			children = (
-				9A4372181A1CC361004F3F1A /* menus_like@2x.png */,
+				1866DFE21A1DE1E500F71D9C /* menus_twoTitle@2x.png */,
+				1866DFDE1A1D966700F71D9C /* menus_oneTitle@2x.png */,
+				1866DFD61A1D886300F71D9C /* menus_oneTap@2x.png */,
+				1866DFD71A1D886300F71D9C /* menus_three@2x.png */,
+				1866DFD81A1D886300F71D9C /* menus_threeTap@2x.png */,
+				1866DFD91A1D886300F71D9C /* menus_one@2x.png */,
 				189CA06C1A1C5446009A3E4C /* meuns_star@2x.png */,
 				189CA06D1A1C5446009A3E4C /* meuns_globe@2x.png */,
 				189CA06E1A1C5446009A3E4C /* meuns_burger@2x.png */,
@@ -539,6 +554,7 @@
 			files = (
 				189CA0731A1C5446009A3E4C /* meuns_globe@2x.png in Resources */,
 				189CA07D1A1C71C3009A3E4C /* local_manSinger@2x.png in Resources */,
+				1866DFDD1A1D886300F71D9C /* menus_one@2x.png in Resources */,
 				189CA0911A1C7778009A3E4C /* cat6@2x.png in Resources */,
 				189CA0751A1C5446009A3E4C /* meuns_gear@2x.png in Resources */,
 				189CA0CB1A1C9BF1009A3E4C /* chat_line@2x.png in Resources */,
@@ -546,10 +562,10 @@
 				189CA07E1A1C71C3009A3E4C /* local_womanUserHead@2x.png in Resources */,
 				1875AD9C1A1B38020091AB11 /* BaseViewController.xib in Resources */,
 				1875ADC21A1B477A0091AB11 /* MenusCell.xib in Resources */,
+				1866DFDA1A1D886300F71D9C /* menus_oneTap@2x.png in Resources */,
 				189CA0931A1C7778009A3E4C /* cat7@2x.png in Resources */,
 				189CA0741A1C5446009A3E4C /* meuns_burger@2x.png in Resources */,
 				189CA0901A1C7778009A3E4C /* cat2@2x.png in Resources */,
-				9A4372191A1CC361004F3F1A /* menus_like@2x.png in Resources */,
 				189CA08D1A1C7778009A3E4C /* cat0@2x.png in Resources */,
 				189CA08E1A1C7778009A3E4C /* cat1@2x.png in Resources */,
 				9A4372221A1CDF52004F3F1A /* PersonViewController.xib in Resources */,
@@ -557,6 +573,7 @@
 				1875ADA71A1B42390091AB11 /* base_navBack@2x.png in Resources */,
 				1875ADB41A1B42EF0091AB11 /* yuepai.plist in Resources */,
 				1875AD7C1A1B36AA0091AB11 /* LaunchScreen.xib in Resources */,
+				1866DFDC1A1D886300F71D9C /* menus_threeTap@2x.png in Resources */,
 				189CA0761A1C5446009A3E4C /* meuns_profile@2x.png in Resources */,
 				189CA0951A1C7778009A3E4C /* cat9@2x.png in Resources */,
 				1875ADA51A1B3C820091AB11 /* base_navBG@2x.png in Resources */,
@@ -568,12 +585,15 @@
 				189CA0771A1C5446009A3E4C /* meuns_nil@2x.png in Resources */,
 				189CA06B1A1C4DCE009A3E4C /* burger@2x.png in Resources */,
 				1875AD791A1B36AA0091AB11 /* Images.xcassets in Resources */,
+				1866DFE31A1DE1E500F71D9C /* menus_twoTitle@2x.png in Resources */,
+				1866DFDF1A1D966700F71D9C /* menus_oneTitle@2x.png in Resources */,
 				189CA0921A1C7778009A3E4C /* cat8@2x.png in Resources */,
 				1875AD951A1B36C30091AB11 /* MenusViewController.xib in Resources */,
 				189CA0C61A1C9712009A3E4C /* ChatCell.xib in Resources */,
 				189CA0C81A1C97B8009A3E4C /* local_manSinger.png in Resources */,
 				189CA0721A1C5446009A3E4C /* meuns_star@2x.png in Resources */,
 				189CA0D01A1CA360009A3E4C /* InfoViewController.xib in Resources */,
+				1866DFDB1A1D886300F71D9C /* menus_three@2x.png in Resources */,
 				189CA08C1A1C7778009A3E4C /* cat5@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
