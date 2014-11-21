@@ -110,6 +110,7 @@
     } completion:^(BOOL fininsh)
      {
          bottomView.frame = CGRectMake(0, appBounds.size.height, 320, 210);
+         
      }];
 }
 
