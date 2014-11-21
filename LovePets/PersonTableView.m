@@ -1,16 +1,16 @@
 //
-//  InfoTableView.m
+//  PersonTableView.m
 //  LovePets
 //
-//  Created by 于博洋 on 14/11/19.
+//  Created by apple on 14/11/21.
 //  Copyright (c) 2014年 yuby. All rights reserved.
 //
 
-#import "InfoTableView.h"
-#import "InfoCell.h"
+#import "PersonTableView.h"
 #import "EmptyView.h"
+#import "PersonCell.h"
 
-@implementation InfoTableView
+@implementation PersonTableView
 
 - (id)initWithFrame:(CGRect)frame style:(UITableViewStyle)style{
     self = [super initWithFrame:frame style:style];
@@ -123,7 +123,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 70;
+    return 105;
 }
 
 #pragma mark - UITableView DataSource
@@ -155,15 +155,14 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *CellIdentifier = @"InfoCell";
-    InfoCell * cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    static NSString *CellIdentifier = @"PersonCell";
+    PersonCell * cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        UINib * cellNib =[UINib nibWithNibName:@"InfoCell" bundle:nil];
+        UINib * cellNib =[UINib nibWithNibName:@"PersonCell" bundle:nil];
         [tableView registerNib:cellNib forCellReuseIdentifier:CellIdentifier];
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         [self setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     }
-    cell.infoVC = self.infoVC;
     //    [cell updataCellWithOrderInfo:_arrlist[indexPath.row]];
     
     return cell;

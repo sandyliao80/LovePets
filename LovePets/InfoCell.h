@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "InfoViewController.h"
 
 @interface InfoCell : UITableViewCell
+{
+    IBOutlet UIImageView * headImg;
+}
+
+
+@property (nonatomic,retain)InfoViewController * infoVC;
 
 @end

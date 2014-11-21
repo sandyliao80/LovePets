@@ -8,6 +8,7 @@
 
 #import "InfoViewController.h"
 #import "InfoTableView.h"
+#import "PersonViewController.h"
 
 @interface InfoViewController ()
 
@@ -24,13 +25,30 @@
 //    infoTableView.meunsDelegate = self;
     infoTableView.backgroundColor = RGBONLYCOLOR(225);
     infoTableView.tableHeaderView = headView;
+    infoTableView.infoVC = self;
     [self.view addSubview:infoTableView];
+    
+    
+    headImg.userInteractionEnabled = YES;
+    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(jumpToPerson:)];
+    [headImg addGestureRecognizer:tap];
+}
+
+- (void)jumpToPerson:(UITapGestureRecognizer *)tap
+{
+    PersonViewController * next = [[PersonViewController alloc]init];
+    [self.navigationController pushViewController:next animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+/*
+
+ */
 
 /*
 #pragma mark - Navigation

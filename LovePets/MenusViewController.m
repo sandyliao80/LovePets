@@ -15,6 +15,9 @@
 @interface MenusViewController ()<RNFrostedSidebarDelegate,UIScrollViewDelegate,MenusViewDelegate>
 {
     RNFrostedSidebar *callout;
+    
+    UILabel * leftNav;
+    UILabel * rightNav;
 }
 @property (nonatomic, strong) NSMutableIndexSet *optionIndices;
 
@@ -26,8 +29,29 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    //UIColor(red: 0/255.0, green: 176/255.0, blue: 232/255.0, alpha: 1.0)
     self.view.backgroundColor = RGBONLYCOLOR(255);
+    
+    UIView * navView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 100, 44)];
+    navView.backgroundColor = [UIColor clearColor];
+    
+    self.labTitle=[[UILabel alloc] initWithFrame:CGRectMake(0,-7,100,44)];
+    self.labTitle.textAlignment=NSTextAlignmentCenter;
+    self.labTitle.backgroundColor=[UIColor clearColor];
+    self.labTitle.textColor = RGBONLYCOLOR(255);
+    self.labTitle.font = [UIFont fontWithName:@"Arial" size:19];
+    
+    leftNav = [[UILabel alloc]initWithFrame:CGRectMake(30, 33, 20, 4)];
+    leftNav.backgroundColor = RGBCOLOR(200, 200, 200);
+    [navView addSubview:leftNav];
+    
+    rightNav = [[UILabel alloc]initWithFrame:CGRectMake(55, 33, 20, 4)];
+    rightNav.backgroundColor = [UIColor whiteColor];
+    [navView addSubview:rightNav];
+    
+    [navView addSubview:self.labTitle];
+    
+    
+    self.navigationItem.titleView = navView;
     
     self.labTitle.text = @"首页";
     self.leftBtn.frame =CGRectMake(0, 0, 19, 17);
@@ -114,9 +138,13 @@
     CGFloat xOffset = scrollView.contentOffset.x;
     if (xOffset >= appBounds.size.width/2) {
         self.labTitle.text = @"聊天记录";
+        rightNav.backgroundColor = RGBCOLOR(200, 200, 200);
+        leftNav.backgroundColor = [UIColor whiteColor];
     }
     else {
         self.labTitle.text = @"首页";
+        rightNav.backgroundColor = [UIColor whiteColor];
+        leftNav.backgroundColor = RGBCOLOR(200, 200, 200);
     }
 }
 

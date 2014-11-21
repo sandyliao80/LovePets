@@ -9,5 +9,12 @@
 #import "BaseViewController.h"
 
 @interface PersonViewController : BaseViewController
+{
+    IBOutlet UIView * headView;
+    
+    IBOutlet UIView * userHeadView;
+}
+
+
 
 @end

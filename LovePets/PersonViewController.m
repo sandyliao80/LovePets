@@ -7,6 +7,7 @@
 //
 
 #import "PersonViewController.h"
+#import "PersonTableView.h"
 
 @interface PersonViewController ()
 
@@ -18,6 +19,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.labTitle.text = @"CoCo";
+    
+    PersonTableView * personTavleView = [[PersonTableView alloc]initWithFrame:CGRectMake(0, 0, appBounds.size.width, appBounds.size.height-self.navHeight) style:UITableViewStylePlain];
+    personTavleView.backgroundColor = RGBONLYCOLOR(225);
+    personTavleView.tableHeaderView = headView;
+    [self.view addSubview:personTavleView];
+    
+    userHeadView.layer.masksToBounds = YES;
+    userHeadView.layer.cornerRadius = RADIUSNUM;
     
     
 }

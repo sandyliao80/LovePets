@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MenusViewController.h"
 
 @interface ChatCell : UITableViewCell
 
 {
     IBOutlet UIImageView * userHead;
+    
+    IBOutlet UIImageView * headImage;
 }
 
 @end

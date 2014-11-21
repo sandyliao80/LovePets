@@ -12,6 +12,8 @@
 
 {
     IBOutlet UIView * headView;
+    
+    IBOutlet UIImageView * headImg;
 }
 
 @end
