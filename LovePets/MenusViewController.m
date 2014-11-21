@@ -82,13 +82,35 @@
     [self.aScrollVIew addSubview:menusTavleView];
     [self.aScrollVIew addSubview:chatTableView];
     
+    UITapGestureRecognizer * tapBootome = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(cancelAction:)];
+    [self.view addGestureRecognizer:tapBootome];
+    
 
     
 }
 
 - (void)rightAction:(UIButton *)sender
 {
-    
+    [UIView animateWithDuration:0.4 animations:^(void){
+        
+        bottomView.frame = CGRectMake(0, 358-self.navHeight-20, 320, 210);
+        
+    } completion:^(BOOL fininsh)
+    {
+        bottomView.frame = CGRectMake(0, 358-self.navHeight-20, 320, 210);
+    }];
+}
+
+- (IBAction)cancelAction:(id)sender
+{
+    [UIView animateWithDuration:0.4 animations:^(void){
+        
+        bottomView.frame = CGRectMake(0, appBounds.size.height, 320, 210);
+        
+    } completion:^(BOOL fininsh)
+     {
+         bottomView.frame = CGRectMake(0, appBounds.size.height, 320, 210);
+     }];
 }
 
 - (void)menusAction:(UIButton * )sender

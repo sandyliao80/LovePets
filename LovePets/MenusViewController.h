@@ -9,7 +9,9 @@
 #import "BaseViewController.h"
 
 @interface MenusViewController : BaseViewController
-
+{
+    IBOutlet UIView * bottomView;
+}
 @property (nonatomic,retain) IBOutlet UIScrollView * aScrollVIew;
 
 @end
