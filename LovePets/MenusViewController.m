@@ -34,10 +34,16 @@
     [self.leftBtn setBackgroundImage:[UIImage imageNamed:@"burger.png"] forState:UIControlStateNormal];
     [self.leftBtn addTarget:self action:@selector(menusAction:) forControlEvents:UIControlEventTouchUpInside];
     
+    self.rightBtn.frame =CGRectMake(0, 0, 24, 17);
+    [self.rightBtn setBackgroundImage:[UIImage imageNamed:@"menus_navRight.png"] forState:UIControlStateNormal];
+    [self.rightBtn addTarget:self action:@selector(rightAction:) forControlEvents:UIControlEventTouchUpInside];
+    //@2x 14 10
+    
     self.optionIndices = [NSMutableIndexSet indexSetWithIndex:1];
     
     MenusTableV * menusTavleView = [[MenusTableV alloc]initWithFrame:CGRectMake(0, 0, appBounds.size.width, appBounds.size.height-self.navHeight) style:UITableViewStylePlain];
     menusTavleView.meunsDelegate = self;
+    menusTavleView.menusVC = self;
     menusTavleView.backgroundColor = RGBONLYCOLOR(225);
     
     ChatListTableView * chatTableView = [[ChatListTableView alloc]initWithFrame:CGRectMake(appBounds.size.width, 0, appBounds.size.width, appBounds.size.height-self.navHeight)];
@@ -56,6 +62,11 @@
     
 }
 
+- (void)rightAction:(UIButton *)sender
+{
+    
+}
+
 - (void)menusAction:(UIButton * )sender
 {
     NSArray *images = @[
@@ -64,11 +75,11 @@
                         [UIImage imageNamed:@"menus_oneTitle.png"],
                         [UIImage imageNamed:@"menus_twoTitle.png"],
                         [UIImage imageNamed:@"meuns_nil.png"],
-                        [UIImage imageNamed:@"meuns_globe"],
-                        [UIImage imageNamed:@"meuns_profile"],
-                        [UIImage imageNamed:@"meuns_star"],
+                        [UIImage imageNamed:@"menus_yijian.png"],
+                        [UIImage imageNamed:@"menus_clearTitle.png"],
+                        [UIImage imageNamed:@"menus_aboutMe.png"],
                         [UIImage imageNamed:@"meuns_nil.png"],
-                        [UIImage imageNamed:@"meuns_globe"],
+                        [UIImage imageNamed:@"menus_logonout.png"],
                         ];
     callout = [[RNFrostedSidebar alloc] initWithImages:images];
     callout.delegate = self;

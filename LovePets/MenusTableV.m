@@ -162,6 +162,7 @@
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         [self setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     }
+    cell.menusVC = self.menusVC;
     [cell updataCellWithOrderInfo:indexPath.row];
     
     return cell;

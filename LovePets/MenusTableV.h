@@ -7,6 +7,7 @@
 //
 
 #import "BaseTableView.h"
+#import "MenusViewController.h"
 
 @protocol  MenusViewDelegate <NSObject>
 
@@ -20,6 +21,7 @@
     
     NSInteger tempRefre; //第一次进入 现实菊花
 }
+@property (nonatomic,retain) MenusViewController * menusVC;
 
 @property(nonatomic,assign)int limit;
 @property(nonatomic,assign)id<MenusViewDelegate> meunsDelegate;

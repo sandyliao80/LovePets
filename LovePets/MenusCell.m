@@ -7,6 +7,7 @@
 //
 
 #import "MenusCell.h"
+#import "PersonViewController.h"
 
 @implementation MenusCell
 
@@ -21,7 +22,8 @@
 
 - (void)headAction:(UITapGestureRecognizer *)tap
 {
-    
+    PersonViewController * next = [[PersonViewController alloc]init];
+    [self.menusVC.navigationController pushViewController:next animated:YES];
 }
 
 - (void)updataCellWithOrderInfo:(NSInteger)index

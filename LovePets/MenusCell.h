@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MenusViewController.h"
 
 @interface MenusCell : UITableViewCell
 
@@ -17,6 +18,8 @@
     IBOutlet UIImageView * imgInfo;
     
 }
+@property (nonatomic,retain) MenusViewController * menusVC;
+
 
 - (void)updataCellWithOrderInfo:(NSInteger)index;
 
