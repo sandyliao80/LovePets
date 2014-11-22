@@ -18,6 +18,9 @@
     
     UILabel * leftNav;
     UILabel * rightNav;
+    
+    UIGestureRecognizer * tapBootome;
+    UIView * allbottomView;
 }
 @property (nonatomic, strong) NSMutableIndexSet *optionIndices;
 
@@ -82,35 +85,40 @@
     [self.aScrollVIew addSubview:menusTavleView];
     [self.aScrollVIew addSubview:chatTableView];
     
-    UITapGestureRecognizer * tapBootome = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(cancelAction:)];
-    [self.view addGestureRecognizer:tapBootome];
-    
 
+    tapBootome = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(cancelAction:)];
+    allbottomView  = [[UIView alloc]initWithFrame:CGRectMake(0, 0, appBounds.size.width, appBounds.size.height)];
     
 }
 
 - (void)rightAction:(UIButton *)sender
 {
+    [self.view addSubview:allbottomView];
+    [allbottomView addGestureRecognizer:tapBootome];
     [UIView animateWithDuration:0.4 animations:^(void){
         
-        bottomView.frame = CGRectMake(0, 358-self.navHeight-20, 320, 210);
-        
-    } completion:^(BOOL fininsh)
-    {
-        bottomView.frame = CGRectMake(0, 358-self.navHeight-20, 320, 210);
+        bottomView.frame = CGRectMake(0, appBounds.size.height - 210 -self.navHeight, 320, 210);
+        self.view.backgroundColor = [UIColor blackColor];
+        self.view.alpha = 0.8;
+    } completion:^(BOOL fininsh){
+        self.view.backgroundColor = [UIColor blackColor];
+        self.view.alpha = 0.8;
+        bottomView.frame = CGRectMake(0, appBounds.size.height - 210 - self.navHeight, 320, 210);
     }];
 }
 
 - (IBAction)cancelAction:(id)sender
 {
     [UIView animateWithDuration:0.4 animations:^(void){
-        
         bottomView.frame = CGRectMake(0, appBounds.size.height, 320, 210);
-        
-    } completion:^(BOOL fininsh)
-     {
+        self.view.backgroundColor = [UIColor clearColor];
+        self.view.alpha = 1;
+    }completion:^(BOOL fininsh){
+        self.view.backgroundColor = [UIColor clearColor];
+        self.view.alpha = 1;
+        [allbottomView removeGestureRecognizer:tapBootome];
+        [allbottomView removeFromSuperview];
          bottomView.frame = CGRectMake(0, appBounds.size.height, 320, 210);
-         
      }];
 }
 
@@ -165,6 +173,7 @@
         leftNav.backgroundColor = [UIColor whiteColor];
     }
     else {
+        
         self.labTitle.text = @"首页";
         rightNav.backgroundColor = [UIColor whiteColor];
         leftNav.backgroundColor = RGBCOLOR(200, 200, 200);
