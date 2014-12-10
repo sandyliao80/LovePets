@@ -12,6 +12,22 @@
 		181405511A1F36D000A15D71 /* PersonTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 181405501A1F36D000A15D71 /* PersonTableView.m */; };
 		181405551A1F36FB00A15D71 /* PersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181405531A1F36FB00A15D71 /* PersonCell.m */; };
 		181405561A1F36FB00A15D71 /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181405541A1F36FB00A15D71 /* PersonCell.xib */; };
+		185E8C5C1A282F1A009718D4 /* FrontiaSource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 185E8C4A1A282F1A009718D4 /* FrontiaSource.bundle */; };
+		185E8C5D1A282F1A009718D4 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E8C4C1A282F1A009718D4 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		185E8C5E1A282F1A009718D4 /* TencentOpenAPI in Frameworks */ = {isa = PBXBuildFile; fileRef = 185E8C541A282F1A009718D4 /* TencentOpenAPI */; };
+		185E8C5F1A282F1A009718D4 /* libWeiboSDK in Frameworks */ = {isa = PBXBuildFile; fileRef = 185E8C561A282F1A009718D4 /* libWeiboSDK */; };
+		185E8C601A282F1B009718D4 /* libWeChatSDK in Frameworks */ = {isa = PBXBuildFile; fileRef = 185E8C591A282F1A009718D4 /* libWeChatSDK */; };
+		185E8C621A282FD1009718D4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185E8C611A282FD1009718D4 /* SystemConfiguration.framework */; };
+		185E8C641A282FDC009718D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185E8C631A282FDC009718D4 /* UIKit.framework */; };
+		185E8C661A282FE5009718D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185E8C651A282FE5009718D4 /* Foundation.framework */; };
+		185E8C681A282FED009718D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185E8C671A282FED009718D4 /* CoreGraphics.framework */; };
+		185E8C6A1A282FF3009718D4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185E8C691A282FF3009718D4 /* CoreLocation.framework */; };
+		185E8C6C1A283001009718D4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185E8C6B1A283001009718D4 /* Security.framework */; };
+		185E8C6E1A283009009718D4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185E8C6D1A283009009718D4 /* CoreTelephony.framework */; };
+		185E8C701A283016009718D4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 185E8C6F1A283016009718D4 /* libsqlite3.dylib */; };
+		185E8C721A28301F009718D4 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 185E8C711A28301F009718D4 /* libstdc++.dylib */; };
+		185E8C741A283026009718D4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 185E8C731A283026009718D4 /* libz.dylib */; };
+		185E8C761A283106009718D4 /* Frontia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185E8C751A283106009718D4 /* Frontia.framework */; };
 		1866DFDA1A1D886300F71D9C /* menus_oneTap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1866DFD61A1D886300F71D9C /* menus_oneTap@2x.png */; };
 		1866DFDB1A1D886300F71D9C /* menus_three@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1866DFD71A1D886300F71D9C /* menus_three@2x.png */; };
 		1866DFDC1A1D886300F71D9C /* menus_threeTap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1866DFD81A1D886300F71D9C /* menus_threeTap@2x.png */; };
@@ -100,6 +116,32 @@
 		181405521A1F36FB00A15D71 /* PersonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonCell.h; sourceTree = "<group>"; };
 		181405531A1F36FB00A15D71 /* PersonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonCell.m; sourceTree = "<group>"; };
 		181405541A1F36FB00A15D71 /* PersonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
+		185E8C4A1A282F1A009718D4 /* FrontiaSource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FrontiaSource.bundle; sourceTree = "<group>"; };
+		185E8C4B1A282F1A009718D4 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		185E8C4C1A282F1A009718D4 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		185E8C4E1A282F1A009718D4 /* QQApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQApi.h; sourceTree = "<group>"; };
+		185E8C4F1A282F1A009718D4 /* QQApiInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQApiInterface.h; sourceTree = "<group>"; };
+		185E8C501A282F1A009718D4 /* QQApiInterfaceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQApiInterfaceObject.h; sourceTree = "<group>"; };
+		185E8C511A282F1A009718D4 /* sdkdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sdkdef.h; sourceTree = "<group>"; };
+		185E8C521A282F1A009718D4 /* TencentOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TencentOAuth.h; sourceTree = "<group>"; };
+		185E8C531A282F1A009718D4 /* TencentOAuthObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TencentOAuthObject.h; sourceTree = "<group>"; };
+		185E8C541A282F1A009718D4 /* TencentOpenAPI */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = TencentOpenAPI; sourceTree = "<group>"; };
+		185E8C561A282F1A009718D4 /* libWeiboSDK */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK; sourceTree = "<group>"; };
+		185E8C571A282F1A009718D4 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
+		185E8C591A282F1A009718D4 /* libWeChatSDK */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK; sourceTree = "<group>"; };
+		185E8C5A1A282F1A009718D4 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		185E8C5B1A282F1A009718D4 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		185E8C611A282FD1009718D4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		185E8C631A282FDC009718D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		185E8C651A282FE5009718D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		185E8C671A282FED009718D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		185E8C691A282FF3009718D4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		185E8C6B1A283001009718D4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		185E8C6D1A283009009718D4 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		185E8C6F1A283016009718D4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		185E8C711A28301F009718D4 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		185E8C731A283026009718D4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		185E8C751A283106009718D4 /* Frontia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Frontia.framework; sourceTree = "<group>"; };
 		1866DFD61A1D886300F71D9C /* menus_oneTap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menus_oneTap@2x.png"; sourceTree = "<group>"; };
 		1866DFD71A1D886300F71D9C /* menus_three@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menus_three@2x.png"; sourceTree = "<group>"; };
 		1866DFD81A1D886300F71D9C /* menus_threeTap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menus_threeTap@2x.png"; sourceTree = "<group>"; };
@@ -200,6 +242,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185E8C741A283026009718D4 /* libz.dylib in Frameworks */,
+				185E8C721A28301F009718D4 /* libstdc++.dylib in Frameworks */,
+				185E8C701A283016009718D4 /* libsqlite3.dylib in Frameworks */,
+				185E8C6E1A283009009718D4 /* CoreTelephony.framework in Frameworks */,
+				185E8C761A283106009718D4 /* Frontia.framework in Frameworks */,
+				185E8C6C1A283001009718D4 /* Security.framework in Frameworks */,
+				185E8C6A1A282FF3009718D4 /* CoreLocation.framework in Frameworks */,
+				185E8C681A282FED009718D4 /* CoreGraphics.framework in Frameworks */,
+				185E8C661A282FE5009718D4 /* Foundation.framework in Frameworks */,
+				185E8C641A282FDC009718D4 /* UIKit.framework in Frameworks */,
+				185E8C621A282FD1009718D4 /* SystemConfiguration.framework in Frameworks */,
+				185E8C5F1A282F1A009718D4 /* libWeiboSDK in Frameworks */,
+				185E8C601A282F1B009718D4 /* libWeChatSDK in Frameworks */,
+				185E8C5E1A282F1A009718D4 /* TencentOpenAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,9 +281,66 @@
 			name = Person;
 			sourceTree = "<group>";
 		};
+		185E8C491A282F1A009718D4 /* lib_third */ = {
+			isa = PBXGroup;
+			children = (
+				185E8C4A1A282F1A009718D4 /* FrontiaSource.bundle */,
+				185E8C4B1A282F1A009718D4 /* JSONKit.h */,
+				185E8C4C1A282F1A009718D4 /* JSONKit.m */,
+				185E8C4D1A282F1A009718D4 /* QQ */,
+				185E8C551A282F1A009718D4 /* WB */,
+				185E8C581A282F1A009718D4 /* WX */,
+			);
+			path = lib_third;
+			sourceTree = "<group>";
+		};
+		185E8C4D1A282F1A009718D4 /* QQ */ = {
+			isa = PBXGroup;
+			children = (
+				185E8C4E1A282F1A009718D4 /* QQApi.h */,
+				185E8C4F1A282F1A009718D4 /* QQApiInterface.h */,
+				185E8C501A282F1A009718D4 /* QQApiInterfaceObject.h */,
+				185E8C511A282F1A009718D4 /* sdkdef.h */,
+				185E8C521A282F1A009718D4 /* TencentOAuth.h */,
+				185E8C531A282F1A009718D4 /* TencentOAuthObject.h */,
+				185E8C541A282F1A009718D4 /* TencentOpenAPI */,
+			);
+			path = QQ;
+			sourceTree = "<group>";
+		};
+		185E8C551A282F1A009718D4 /* WB */ = {
+			isa = PBXGroup;
+			children = (
+				185E8C561A282F1A009718D4 /* libWeiboSDK */,
+				185E8C571A282F1A009718D4 /* WeiboSDK.h */,
+			);
+			path = WB;
+			sourceTree = "<group>";
+		};
+		185E8C581A282F1A009718D4 /* WX */ = {
+			isa = PBXGroup;
+			children = (
+				185E8C591A282F1A009718D4 /* libWeChatSDK */,
+				185E8C5A1A282F1A009718D4 /* WXApi.h */,
+				185E8C5B1A282F1A009718D4 /* WXApiObject.h */,
+			);
+			path = WX;
+			sourceTree = "<group>";
+		};
 		1875AD5F1A1B36AA0091AB11 = {
 			isa = PBXGroup;
 			children = (
+				185E8C751A283106009718D4 /* Frontia.framework */,
+				185E8C731A283026009718D4 /* libz.dylib */,
+				185E8C711A28301F009718D4 /* libstdc++.dylib */,
+				185E8C6F1A283016009718D4 /* libsqlite3.dylib */,
+				185E8C6D1A283009009718D4 /* CoreTelephony.framework */,
+				185E8C6B1A283001009718D4 /* Security.framework */,
+				185E8C691A282FF3009718D4 /* CoreLocation.framework */,
+				185E8C671A282FED009718D4 /* CoreGraphics.framework */,
+				185E8C651A282FE5009718D4 /* Foundation.framework */,
+				185E8C631A282FDC009718D4 /* UIKit.framework */,
+				185E8C611A282FD1009718D4 /* SystemConfiguration.framework */,
 				1875AD6A1A1B36AA0091AB11 /* LovePets */,
 				1875AD841A1B36AA0091AB11 /* LovePetsTests */,
 				1875AD691A1B36AA0091AB11 /* Products */,
@@ -334,6 +447,7 @@
 		1875ADAB1A1B42EF0091AB11 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				185E8C491A282F1A009718D4 /* lib_third */,
 				189CA0651A1C4D8D009A3E4C /* RNFrostedSidebar */,
 				1875ADCB1A1B4B540091AB11 /* DWTagList */,
 				1875ADC71A1B4B270091AB11 /* EmptyView */,
@@ -640,6 +754,7 @@
 				189CA0D01A1CA360009A3E4C /* InfoViewController.xib in Resources */,
 				1866DFDB1A1D886300F71D9C /* menus_three@2x.png in Resources */,
 				181405561A1F36FB00A15D71 /* PersonCell.xib in Resources */,
+				185E8C5C1A282F1A009718D4 /* FrontiaSource.bundle in Resources */,
 				189CA08C1A1C7778009A3E4C /* cat5@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -680,6 +795,7 @@
 				1875AD6E1A1B36AA0091AB11 /* main.m in Sources */,
 				1875ADB81A1B42FE0091AB11 /* TableFooterV.m in Sources */,
 				1875AD941A1B36C30091AB11 /* MenusViewController.m in Sources */,
+				185E8C5D1A282F1A009718D4 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -800,10 +916,21 @@
 		1875AD8C1A1B36AA0091AB11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(TARGET_NAME)/LovePets.pch";
 				INFOPLIST_FILE = LovePets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LovePets/other/lib_third/QQ",
+					"$(PROJECT_DIR)/LovePets/other/lib_third/WB",
+					"$(PROJECT_DIR)/LovePets/other/lib_third/WX",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -811,10 +938,21 @@
 		1875AD8D1A1B36AA0091AB11 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(TARGET_NAME)/LovePets.pch";
 				INFOPLIST_FILE = LovePets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LovePets/other/lib_third/QQ",
+					"$(PROJECT_DIR)/LovePets/other/lib_third/WB",
+					"$(PROJECT_DIR)/LovePets/other/lib_third/WX",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -6,6 +6,8 @@
 //  Copyright (c) 2014年 yuby. All rights reserved.
 //
 
+#import <Frontia/Frontia.h>
+
 #import "AppDelegate.h"
 #import "MenusViewController.h"
 
@@ -14,6 +16,9 @@
 @end
 
 @implementation AppDelegate
+
+#define APP_KEY @"sN6hr3xK9up7LeS4rEtgTWi3"
+#define REPORT_ID @"d5dd317228"
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -24,9 +29,54 @@
     
     self.window.rootViewController = nav;
     
+    //初始化Frontia
+    [Frontia initWithApiKey:APP_KEY];
     
+    [Frontia getPush];
+    [FrontiaPush setupChannel:launchOptions];
+    
+    
+    
+    FrontiaStatistics* statTracker = [Frontia getStatistics];
+    statTracker.enableExceptionLog = YES; // 是否允许截获并发送崩溃信息，请设置YES或者NO
+    statTracker.channelId = @"this_is_a_invalid_channel_ID";//设置您的app的发布渠道
+    statTracker.logStrategy = FrontiaStatLogStrategyCustom;//根据开发者设定的时间间隔接口发送 也可以使用启动时发送策略
+    statTracker.logSendInterval = 1;  //为1时表示发送日志的时间间隔为1小时
+    statTracker.logSendWifiOnly = YES; //是否仅在WIfi情况下发送日志数据
+    statTracker.sessionResumeInterval = 60;//设置应用进入后台再回到前台为同一次session的间隔时间[0~600s],超过600s则设为600s，默认为30s
     
     return YES;
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    
+    NSLog(@"frontia application:%@", deviceToken);
+    [FrontiaPush registerDeviceToken: deviceToken];
+    
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    NSLog(@"frontia application:%@", error);
+}
+
+- (void)application:(UIApplication *)application
+didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    NSLog(@"frontia applciation receive Notify: %@", [userInfo description]);
+    NSString *alert = [[userInfo objectForKey:@"aps"] objectForKey:@"alert"];
+    if (application.applicationState == UIApplicationStateActive) {
+        // Nothing to do if applicationState is Inactive, the iOS already displayed an alert view.
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Did receive a Remote Notification"
+                                                            message:[NSString stringWithFormat:@"The application received this remote notification while it was running:\n%@", alert]
+                                                           delegate:self
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+        [alertView show];
+    }
+    [application setApplicationIconBadgeNumber:0];
+    
+    [FrontiaPush handleNotification:userInfo];
+    
 }
 
 //禁止横屏

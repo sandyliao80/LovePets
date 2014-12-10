@@ -44,9 +44,6 @@
     [self.view addSubview:self.labTitle];
     self.navigationItem.titleView = self.labTitle;
     
-    
-
-    
 }
 
 - (void)popVC
